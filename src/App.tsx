@@ -7,45 +7,15 @@ import {
 import { RoomsPage } from "./pages/RoomsPage";
 import { RoomDetailPage } from "./pages/RoomDetailPage";
 import { BookingsPage } from "./pages/BookingsPage";
+import "./index.css";
 
 const Layout = () => (
-  <div
-    style={{
-      maxWidth: "800px",
-      margin: "0 auto",
-      padding: "1.5rem",
-      fontFamily: "system-ui, sans-serif",
-    }}
-  >
-    <header
-      style={{
-        borderBottom: "2px solid #eee",
-        paddingBottom: "1rem",
-        marginBottom: "1.5rem",
-      }}
-    >
+  <div className="app-container">
+    <header>
       <h1>🦷 SmileCare Tandklinik</h1>
-      <nav style={{ display: "flex", gap: "1.5rem", marginTop: "0.5rem" }}>
-        <Link
-          to="/"
-          style={{
-            textDecoration: "none",
-            color: "#0066cc",
-            fontWeight: "bold",
-          }}
-        >
-          Behandlingsrum
-        </Link>
-        <Link
-          to="/bookings"
-          style={{
-            textDecoration: "none",
-            color: "#0066cc",
-            fontWeight: "bold",
-          }}
-        >
-          Alla bokningar
-        </Link>
+      <nav>
+        <Link to="/">Behandlingsrum</Link>
+        <Link to="/bookings">Alla bokningar</Link>
       </nav>
     </header>
     <main>
