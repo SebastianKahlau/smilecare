@@ -1,0 +1,46 @@
+{
+  "rooms": [
+    {
+      "id": "1",
+      "name": "Rum 1 - Allmäntandvård",
+      "dentistName": "Dr. Erik Svensson",
+      "specialty": "general-dentistry",
+      "capacity": 1
+    },
+    {
+      "id": "2",
+      "name": "Rum 2 - Tandhygienist",
+      "dentistName": "Sara Lind",
+      "specialty": "hygienist",
+      "capacity": 1
+    },
+    {
+      "id": "3",
+      "name": "Rum 3 - Specialistkirurgi",
+      "dentistName": "Dr. Amina Farah",
+      "specialty": "surgery",
+      "capacity": 1
+    }
+  ],
+  "bookings": [
+    {
+      "id": "101",
+      "roomId": "1",
+      "patientEmail": "patient1@exempel.se",
+      "startTime": "2026-09-15T09:00:00",
+      "endTime": "2026-09-15T10:00:00",
+      "procedure": "Årlig undersökning",
+      "status": "cancelled"
+    },
+    {
+      "roomId": "2",
+      "patientEmail": "ej@hotmail.com",
+      "startTime": "2026-11-25T07:30",
+      "endTime": "2026-11-25T08:30",
+      "procedure": "Lagning av tand",
+      "status": "cancelled",
+      "id": "4LcYa3bLjrY"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
